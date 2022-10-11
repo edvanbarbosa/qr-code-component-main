@@ -1,0 +1,6 @@
+@import "UTF-8";
+
+html{
+   background-color: hsl(212, 45%, 89%);
+   height: 100vh;
+}
