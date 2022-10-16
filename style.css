@@ -1,26 +1,50 @@
 @import "UTF-8";
 
-html{
-   background-color: hsl(212, 45%, 89%);
-   height: 100vh;
-   width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
 }
+
+
 body{
    display: flex;
    align-items: center;
    justify-content: center;
+   background-color: hsl(212, 45%, 89%);
+   height: 100vh;
+   min-width: 375px;
+ 
 }
 main{
    display: flex;
    flex-direction: column;
    align-items: center;
    background-color: white;
-   max-width: 375px;
-   padding: 1.5rem, 1.5rem, 2rem, 1.5rem;
+   width: 375px;
+   font-size: 15px;
+   border-radius: 13px;
+   height: 33rem;
   
+}
+p{
+   color:hsl(220, 15%, 55%);
+   text-align: center;
+   font-weight: 400;
+   font-family: 'Outfit', sans-serif;
+   font-size: 15px;
+   margin: 0.43rem;
+}
+p#main-p{
+   color: hsl(218, 44%, 22%);
+   font-weight: 700;
+   font-size: 1.55rem;
 }
 
 img{
-   width: 18rem ;
-   border-radius:13px ;
+   width: 90% ;
+   border-radius:11px ;
+   margin: 13px;
 }
