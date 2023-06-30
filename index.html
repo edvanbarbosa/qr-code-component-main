@@ -37,6 +37,9 @@
         img.src = `http://api.qrserver.com/v1/create-qr-code/?data=${input.value}&bgcolor=2B7DFA&color=fff`;
         confirm.style.display = 'flex';
       }
+      else{
+        confirm.style.display = 'none';
+      }
       
     });
   </script>
