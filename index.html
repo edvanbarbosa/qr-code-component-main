@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | QR code component</title>
 </head>
 <body>
   <main>
-    <img src="images/image-qr-code.png" alt="qr-code">
-    <p id="main-p">Improve your front-end <br> skills by building projects</p>
-    <p id="sub-p">Scan the QR code to visit Frontend <br> Mentor and take your coding skills <br> to the next level</p>
+    <section class="qr-code">
+      <div class="img-container"><img src="http://api.qrserver.com/v1/create-qr-code/?data=https://www.youtube.com/&bgcolor=2B7DFA&color=fff" alt="qr-code"></div>
+      <form>
+        <label for="">Url:</label>
+        <input type="text">
+        <p><span class="material-symbols-outlined">
+          check_circle
+          </span> Feito!</p>
+        <div class="bt-container"><button>Gerar Qr!</button></div>
+        
+      </form>
+    </section>
   </main>
-  
+  <script>
+    const form = document.querySelector('form');
+    const input = document.querySelector('input');
+    const img = document.querySelector('img');
+    const button = document.querySelector('button');
+    const confirm = document.querySelector('p')
+
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if(input.value.length > 0){
+        img.src = `http://api.qrserver.com/v1/create-qr-code/?data=${input.value}&bgcolor=2B7DFA&color=fff`;
+        confirm.style.display = 'flex';
+      }
+      
+    });
+  </script>
 </body>
 </html>
