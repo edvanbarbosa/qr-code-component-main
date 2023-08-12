@@ -1,5 +1,5 @@
 # Frontend Mentor - QR code component
-
+Link:  https://edvanbarbosa.github.io/qr-code-component-main/
 ![Design preview for the QR code component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
